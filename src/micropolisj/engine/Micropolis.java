@@ -153,13 +153,6 @@ public class Micropolis
 	int crimeAverage;
 	int pollutionAverage;
 	int landValueAverage;
-
-
-
-
-
-
-	
 	int trafficAverage;
 
 	int resValve;   // ranges between -2000 and 2000, updated by setValves
