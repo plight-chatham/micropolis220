@@ -1004,8 +1004,27 @@
 953   misc_animation@0,2016  (conducts)(description=#26)(becomes=954)(onshutdown=820)
 954   misc_animation@0,2032  (conducts)(description=#26)(becomes=955)(onshutdown=820)
 955   misc_animation@0,2048  (conducts)(description=#26)(becomes=952)(onshutdown=820)
+# BEGIN PRISON #
+956   prison@0,0               (conducts)
+957   prison@16,0              (conducts)
+958   prison@32,0              (conducts)   (onpower=916)
+959   prison@48,0              (conducts)   (onpower=920)
+960   prison@0,16              (conducts)
+961   prison@16,16       (zone)(conducts)(building=4x4)(behavior=PRISON)(description=#15)(pollution=100)
+962   prison@32,16             (conducts)   (onpower=924)
+963   prison@48,16             (conducts)   (onpower=928)
+964   prison@0,32              (conducts)
+965   prison@16,32             (conducts)
+966   prison@32,32             (conducts)
+967   prison@48,32             (conducts)
+968   prison@0,48              (conducts)
+969   prison@16,48             (conducts)
+970   prison@32,48             (conducts)
+971   prison@48,48             (conducts)
+
 # unused #
-956   misc_animation@0,2064
-957   misc_animation@0,2080
-958   misc_animation@0,2096
-959   misc_animation@0,2112
+972   misc_animation@0,2064
+973   misc_animation@0,2080
+974   misc_animation@0,2096
+975   misc_animation@0,2112
+

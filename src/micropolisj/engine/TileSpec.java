@@ -71,7 +71,9 @@ public class TileSpec
 	private void resolveBuildingInfo(Map<String,TileSpec> tileMap)
 	{
 		String tmp = getAttribute("building");
-		if (tmp == null) { return; }
+		if (tmp == null) {
+			return;
+		}
 
 		BuildingInfo bi = new BuildingInfo();
 

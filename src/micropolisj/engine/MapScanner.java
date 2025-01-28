@@ -41,7 +41,8 @@ class MapScanner extends TileBehavior
 		STADIUM_EMPTY,
 		STADIUM_FULL,
 		AIRPORT,
-		SEAPORT;
+		SEAPORT,
+		PRISON
 	}
 
 	@Override
@@ -62,6 +63,9 @@ class MapScanner extends TileBehavior
 			return;
 		case COAL:
 			doCoalPower();
+			return;
+		case PRISON:
+			doPrison();
 			return;
 		case NUCLEAR:
 			doNuclearPower();
@@ -186,6 +190,14 @@ class MapScanner extends TileBehavior
 		}
 
 		city.powerPlants.add(new CityLocation(xpos,ypos));
+	}
+
+	void doPrison(){
+		// this is where actual prison game logic goes.
+		if ((city.cityTime % 8) == 0) {
+			repairZone(PRISON, 4);
+		}
+
 	}
 
 	void doNuclearPower()

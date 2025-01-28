@@ -440,7 +440,6 @@ public class Micropolis
 		if (ts.canBulldoze) {
 			return true;
 		}
-
 		if (ts.owner != null) {
 			// part of a zone; only bulldozeable if the owner tile is
 			// no longer intact.
@@ -1467,6 +1466,7 @@ public class Micropolis
 		bb.put("STADIUM_FULL", new MapScanner(this, MapScanner.B.STADIUM_FULL));
 		bb.put("AIRPORT", new MapScanner(this, MapScanner.B.AIRPORT));
 		bb.put("SEAPORT", new MapScanner(this, MapScanner.B.SEAPORT));
+		bb.put("PRISON", new MapScanner(this, MapScanner.B.PRISON));
 
 		this.tileBehaviors = bb;
 	}
